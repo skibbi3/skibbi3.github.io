@@ -11,9 +11,6 @@ $(function () {
     bar += '<a class="nav-link" href="./index.html" target="_top">Home</a>';
     bar += '</li>';
 	bar += '<li class="nav-item">';
-	bar += '<a class="nav-link" href="#">About</a>';
-	bar += '</li>';
-	bar += '<li class="nav-item">';
 	bar += '<a class="nav-link" href="./resume.html" target="_top">Resume</a>';
 	bar += '</li>';
 	bar += '<li class="nav-item">';
