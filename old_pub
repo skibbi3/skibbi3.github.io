@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="jumbotron">
+        <h1>Op-Eds</h1>
+    </div>
+    <div class="row">
+		<div class="col">
+            <h2>Westminster could learn a lot from the Australian Capital Territory</h2>
+            <h6>Electoral Reform Society - 21st October 2020</h6>
+            <p>Australia's capital has voted and the votes are <a href="https://www.abc.net.au/news/2020-10-17/act-election-voting-labor-liberal-greens-results/12778714" target="_blank">still being tallied</a>. With two of the 35 Legislative Assembly seats still undecided, the results are as follows: 10 for Labor, eight for Liberal and five for Greens, whose seats increased by three on their 2016 result. How did a minor party like the Greens perform so well? Could Australia's capital show the rest of Australia and Westminster how to be fairer and more representative?</p>
+            
+            <p>Read more at the <a href="https://www.electoral-reform.org.uk/westminster-could-learn-a-lot-from-the-australian-capital-territory/?utm_campaign=meetedgar&utm_medium=social&utm_source=meetedgar.com&fbclid=IwAR2PhniaBAaddHVPoMhLcHS1aCHlLIef3em7_0rVGuqeFlsTnZjvPrkoUhw" target="_blank">Electoral Reform Society</a> website.</p>
+
+        </div>
+        <div class="col">
+            <h2>Why Australia should go all the way with the UK</h2>
+            <h6>The Daily Telegraph - 6 October 2020</h6>
+            <p>While most of the western world is in recession because of COVID-19  lockdowns, China has been busy gearing up their export machine.  Australia’s over-dependence on China led to massive supply shortages and  panic earlier this year.</p>
+            <p>Thankfully, Senator James Paterson and the Adam Smith Institute have a solution: CANZUK.</p>
+
+            <p>Read more at the <a href="http://www.taxpayers.org.au/opeds/why-australia-should-go-all-the-way-with-the-uk" target="_blank">Australian Taxpayers' Alliance</a> blog.</p>
+        </div>
+    </div>
+    <div class="jumbotron">
+        <h1>Blog posts</h1>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h2>My Immigration Story (Kosta Tarakson)</h2>
+            <h6>MyChoice Australia - 2020 July 9</h6>
+            <p>My great grandmother could not have picked a worse time or place to give birth to my grandfather, Kosta Tarakson -- 1917 on the Aegean Coast. He was a Greek Orthodox Christian and the youngest of five children.</p>
+            <p>The Ottoman Empire considered Christianity a second class religion, but the Tarakson family thrived. At the time only 10 per cent of citizens could read and my family was among those happy few.</p>              
+            <p>Had Kosta been born a generation earlier he may have become notary like his father, or a doctor like his uncle. </p>
+            <p>Read more on <a href="https://mychoice.org.au/blog/7v01bhw1ll4s32ardheh7b3ac0jmrz" target="_blank">MyChoice Australia</a>.</p>
+        </div>
+        <div class="col">
+            <h2>Online Education will go Viral</h2>
+            <h6>MyChoice Australia - 2020 July 1</h6>
+            <p>There is a saying “Where there is a will, there is a way” but most of the time, there is already a way but no will. Often, it takes a crisis to create that will. With the world currently in the grips of a global pandemic, schools and universities were forced to adapt to survive. In doing so, they took the first step towards an education system fit for the 21st century.</p>
+            <p>Online education options have existed for some time now. So-called “e-learning platforms” such as Coursera and Open University have provided people with the choice of long distance at-home study.</p>
+            <p>Read more on <a href="https://mychoice.org.au/blog/online-education-will-go-viral" target="_blank">MyChoice Australia</a>.</p>
+        </div>
+        <div class="col">
+            <h2>Is Preferential Voting indeed Preferable?</h2>
+            <h6>The Sydney Tory - 2020 February 28</h6>
+            <p>Australia is a unique country. It is the only country to use instant run-off voting (IRV), better known as preferential voting. The nation is split into 151 single-member electorates where the voters choose who they want as candidate by labelling every candidate in descending order of choice. If no candidate receives a majority, candidates with less votes are eliminated and their preferences redistributed until a candidate receives a majority.</p>
+            <p>Read more on <a href="https://thesydneytory.com/2020/02/28/is-preferential-voting-indeed-preferable/" target="_blank">The Sydney Tory</a>.</p>
+        </div>
+    </div>
+</div>
