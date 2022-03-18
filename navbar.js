@@ -16,7 +16,6 @@ $(function () {
 	bar += '<li class="nav-item">';
 	bar += '<a class="nav-link" href="./publications.html" target="_top">Publications</a>';
 	bar += '</li>';
-
     bar += '</ul>';
 	bar += '</div>';
 	bar += '</nav>';

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.plot.ly/plotly-2.9.0.min.js"></script>
+    <script src="landtax.js"></script>
+
+    <title>Stamp duty and land tax</title>
+</head>
+
+<body onload="display(3000000, 40)">
+
+    <div class="container-fluid p-5 bg-primary text-white text-center">
+        <h1>Land tax and stamp duty</h1>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-6">
+                <p>Enter a house price and the time scale.</p>
+                <form>
+                    <div>
+                        <label><b>House price:</b></label>
+                        <input id="houseprice" name="houseprice" type="number" value="2000000">
+                    </div>
+                    <div>
+                        <label><b>Years:</b></label>
+                        <input id="years" name="years" type="number" value="30">
+                    </div>
+                    <div>
+                        <button type="button" onclick="display()">Go!</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-6">
+                <div id="displayPlot"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <style>
+        form label {
+            display: inline-block;
+            width: 100px;
+        }
+        form div {
+            margin-bottom: 10px;
+        }
+    </style>
+
+</body>
