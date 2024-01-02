@@ -1,128 +1,63 @@
-<label for="eastern-zodiac">What's your eastern zodiac?</label>
+<!DOCTYPE html>
+<header>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="./avatar_quiz.js"></script>
+<title>James Skibinski</title>
+</header>
+<html>
+<body>
 
-<select name="eastern" id="eastern-zodiac">
-    <option value="rat">Rat</option>
-    <option value="ox">Ox</option>
-    <option value="tiger">Tiger</option>
-    <option value="rabbit">Rabbit</option>
-    <option value="dragon">Dragon</option>
-    <option value="snake">Snake</option>
-    <option value="horse">Horse</option>
-    <option value="goat">Goat</option>
-    <option value="monkey">Monkey</option>
-    <option value="rooster">Rooster</option>
-    <option value="dog">Dog</option>
-    <option value="pig">Pig</option>
-</select>
+<div class="container">
+    <div class="row">
+        <label for="eastern-zodiac">What's your eastern zodiac?</label>
 
-<br/>
+        <select name="eastern" id="eastern-zodiac">
+            <option value="rat">Rat</option>
+            <option value="ox">Ox</option>
+            <option value="tiger">Tiger</option>
+            <option value="rabbit">Rabbit</option>
+            <option value="dragon">Dragon</option>
+            <option value="snake">Snake</option>
+            <option value="horse">Horse</option>
+            <option value="goat">Goat</option>
+            <option value="monkey">Monkey</option>
+            <option value="rooster">Rooster</option>
+            <option value="dog">Dog</option>
+            <option value="pig">Pig</option>
+        </select>
+    </div>
 
-<label for="star-sign">What's your astrological star sign?</label>
-
-<select name="astrology" id="star-sign">
-    <option value="aries">Aries</option>
-    <option value="taurus">Taurus</option>
-    <option value="gemini">Gemini</option>
-    <option value="cancer">Cancer</option>
-    <option value="leo">Leo</option>
-    <option value="virgo">Virgo</option>
-    <option value="libra">Libra</option>
-    <option value="scorpio">Scorpio</option>
-    <option value="sagittarius">Sagittarius</option>
-    <option value="capricorn">Capricorn</option>
-    <option value="aquarius">Aquarius</option>
-    <option value="pisces">Pisces</option>
-</select>
-
-<br />
-
-<button id="go" onclick="assign()">Go!</button>
-
-<p id="results"></p>
-
-<script>
-    function assign() {
-        //// Assigning the user's nation according to their eastern zodiac
-        // Retrieving the zodiac
-        var eastern = document.getElementById("eastern-zodiac");
-        var easternZodiac = eastern.options[eastern.selectedIndex].value;
-
-        // Look-up table
-        const nationTable = {
-            "rabbit" : "Water",
-            "snake"  : "Water",
-            "dog"    : "Water",
-            "rat"    : "Earth",
-            "ox"     : "Earth",
-            "goat"   : "Earth",
-            "dragon" : "Fire",
-            "tiger"  : "Fire",
-            "pig"    : "Fire",
-            "rooster": "Air",
-            "monkey" : "Air",
-            "horse"  : "Air"
-        }
-
-        // Assigning nation
-        var nation = nationTable[easternZodiac];
-
-        //// Assigning the user's nation according to their eastern zodiac
-        // Retrieving Western Star Sign
-        var astrological = document.getElementById("star-sign");
-        var astrologicalSign = astrological.options[astrological.selectedIndex].value;
-
-        // Look-up table
-        const modifierTable = {
-            "cancer"      : "Water",
-            "pisces"      : "Water",
-            "scorpio"     : "Water",
-            "taurus"      : "Earth",
-            "virgo"       : "Earth",
-            "capricorn"   : "Earth",
-            "aries"       : "Fire",
-            "leo"         : "Fire",
-            "sagittarius" : "Fire",
-            "gemini"      : "Fire",
-            "libra"       : "Fire",
-            "aquarius"    : "Fire"
-        }
-
-        // Categorising
-        var modifier = modifierTable[astrologicalSign];
-
-        /// Combining it all
-        // Look-up table
-        const combination = {
-            "Water": {
-                "Water": "Waterbender",
-                "Earth": "Bloodbender",
-                "Fire" : "Non bender - Wolf Warrior",
-                "Air"  : "Healer"
-            },
-            "Earth": {
-                "Earth": "Earthbender",
-                "Water": "Metalbender",
-                "Fire" : "Lavabender",
-                "Air"  : "Non bender - Kyoshi Warrior",
-            },
-            "Fire": {
-                "Fire" : "Firebender",
-                "Water": "Lightningbender",
-                "Earth": "Non bender - Sword Master",
-                "Air"  : "Combustionbender"
-            },
-            "Air": {
-                "Air"  : "Airbender",
-                "Water": "Nonbender - Chi Blocker",
-                "Earth": "Soundbender (astral projection)",
-                "Fire" : "Flightbender"
-            }
-        }
-
-        var bendingType = combination[nation][modifier];
-
-        document.getElementById("results").innerHTML = "You are a " + bendingType + "!";
-        console.log(combination[nation][modifier]);
-    }
+    <div class="row">
+        <label for="star-sign">What's your astrological star sign?</label>
     
-</script>
+        <select name="astrology" id="star-sign">
+            <option value="aries">Aries</option>
+            <option value="taurus">Taurus</option>
+            <option value="gemini">Gemini</option>
+            <option value="cancer">Cancer</option>
+            <option value="leo">Leo</option>
+            <option value="virgo">Virgo</option>
+            <option value="libra">Libra</option>
+            <option value="scorpio">Scorpio</option>
+            <option value="sagittarius">Sagittarius</option>
+            <option value="capricorn">Capricorn</option>
+            <option value="aquarius">Aquarius</option>
+            <option value="pisces">Pisces</option>
+        </select>
+    </div>
+
+    <div class="row">
+        <button id="go" onclick="assign()">Go!</button>
+    </div>
+
+    <div class="row">
+        <p id="results"></p>
+    </div>
+    
+</div>
+
+</body>
