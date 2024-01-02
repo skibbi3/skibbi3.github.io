@@ -1,0 +1,111 @@
+<label for="eastern-zodiac">What's your eastern zodiac?</label>
+
+<select name="eastern" id="eastern-zodiac">
+    <option value="rat">Rat</option>
+    <option value="ox">Ox</option>
+    <option value="tiger">Tiger</option>
+    <option value="rabbit">Rabbit</option>
+    <option value="dragon">Dragon</option>
+    <option value="snake">Snake</option>
+    <option value="horse">Horse</option>
+    <option value="goat">Goat</option>
+    <option value="monkey">Monkey</option>
+    <option value="rooster">Rooster</option>
+    <option value="dog">Dog</option>
+    <option value="pig">Pig</option>
+</select>
+
+<br/>
+
+<label for="star-sign">What's your astrological star sign?</label>
+
+<select name="astrology" id="star-sign">
+    <option value="aries">Aries</option>
+    <option value="taurus">Taurus</option>
+    <option value="gemini">Gemini</option>
+    <option value="cancer">Cancer</option>
+    <option value="leo">Leo</option>
+    <option value="virgo">Virgo</option>
+    <option value="libra">Libra</option>
+    <option value="scorpio">Scorpio</option>
+    <option value="sagittarius">Sagittarius</option>
+    <option value="capricorn">Capricorn</option>
+    <option value="aquarius">Aquarius</option>
+    <option value="pisces">Pisces</option>
+</select>
+
+<p id="results"></p>
+
+<br />
+
+<button id="go" onclick="assign()">Go!</button>
+
+<script>
+    function assign() {
+        // Retrieving Eastern Zodiac
+        var eastern = document.getElementById("eastern-zodiac");
+        var easternZodiac = eastern.options[eastern.selectedIndex].value;
+
+        // Retrieving Western Star Sign
+        var astrological = document.getElementById("star-sign");
+        var astrologicalSign = astrological.options[astrological.selectedIndex].value;
+
+        // Assigning the nation according to Eastern
+        var nation = "-";
+        if (["rabbit", "snake", "dog"].includes(easternZodiac)) {
+            nation = "Water";
+        } else if (["rat", "ox", "goat"].includes(easternZodiac)) {
+            nation = "Earth";
+        } else if (["dragon", "tiger", "pig"].includes(easternZodiac)) {
+            nation = "Fire";
+        } else if (["rooster", "monkey", "horse"].includes(easternZodiac)) {
+            nation = "Air";
+        } else {
+            nation = "Ooops!";
+        }
+
+        // Categorising Astrological Element
+        var modifier = "-";
+        if (["cancer", "pisces", "scorpio"].includes(astrologicalSign)) {
+            modifier = "Water";
+        } else if (["taurus", "virgo", "capricorn"].includes(astrologicalSign)) {
+            modifier = "Earth";
+        } else if (["aries", "leo", "sagittarius"].includes(astrologicalSign)) {
+            modifier = "Fire";
+        } else if (["gemini", "libra", "aquarius"].includes(astrologicalSign)) {
+            modifier = "Air";
+        } else {
+            modifier = "Ooops!";
+        }
+
+        const combination = {
+            "Water": {
+                "Water": "Waterbender",
+                "Earth": "Bloodbender",
+                "Fire" : "Non bender - Wolf Warrior",
+                "Air"  : "Healer"
+            },
+            "Earth": {
+                "Earth": "Earthbender",
+                "Water": "Metalbender",
+                "Fire" : "Lavabender",
+                "Air"  : "Non bender - Kyoshi Warrior",
+            },
+            "Fire": {
+                "Fire" : "Firebender",
+                "Water": "Lightningbender",
+                "Earth": "Non bender - Sword Master",
+                "Air"  : "Combustionbender"
+            },
+            "Air": {
+                "Air"  : "Airbender",
+                "Water": "Nonbender - Chi Blocker",
+                "Earth": "Soundbender (astral projection)",
+                "Fire" : "Flightbender"
+            }
+        }
+        document.getElementById("results").innerHTML = "You are a " + combination[nation][modifier] + "!";
+        console.log(combination[nation][modifier]);
+    }
+    
+</script>
