@@ -94,6 +94,6 @@ function assign() {
     // Displaying the results
     document.getElementById("results").style = {display: "block", border: 'thin solid black'}; // Border not quite right
     document.getElementById("bending_type").innerHTML = "You are a " + bendingType + "!";
-    document.getElementById("bender_image").innerHTML = "<img src=\"img/" + flavourText[bendingType][0] + "\"></img>";
+    document.getElementById("bender_image").innerHTML = "<img src=\"img/" + flavourText[bendingType][0] + "\" width=\"500\"></img>";
     document.getElementById("flavour_text").innerHTML = flavourText[bendingType][1];
 }
