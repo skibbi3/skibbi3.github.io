@@ -1,6 +1,7 @@
 $(function () {
     var bar = '';
     bar += '<nav class="navbar navbar-expand-sm bg-dark navbar-dark">';
+    bar += '<div class="container">'
     bar += '<a class="navbar-brand" href="#">James Skibinski</a>';
     bar += '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">';
     bar += '<span class="navbar-toggler-icon"></span>';
@@ -16,8 +17,12 @@ $(function () {
 	bar += '<li class="nav-item">';
 	bar += '<a class="nav-link" href="./publications.html" target="_top">Publications</a>';
 	bar += '</li>';
+    bar += '<li class="nav-item">';
+	bar += '<a class="nav-link" href="./portfolio.html" target="_top">Portfolio</a>';
+	bar += '</li>';
     bar += '</ul>';
 	bar += '</div>';
+    bar += '</div>';
 	bar += '</nav>';
 
     $("#main-bar").html(bar);
